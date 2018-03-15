@@ -7,7 +7,7 @@
 4) try it by running cap_learn.py
 5) design the control algorithm that generates control actions (vector of 6 integers from 0 to 4). You may use only observations give by the environment.
 6) your goal is :
-..* find the enemy flag
-..* pass through enemy patrol
-..* capture the enemy flag using ground units
-..* survive
+  * find the enemy flag
+  * pass through enemy patrol
+  * capture the enemy flag using ground units
+  * survive
