@@ -130,17 +130,6 @@ class CapEnv(gym.Env):
                             not (locx < 0 or locx > self.map_size[0]-1) and \
                             not (locy < 0 or locy > self.map_size[1]-1):
                             self.observation_space[locy][locx] = self._env[locy][locx]
-#                for i in range(agent.range+1):
-#                    locx, locy = loc[0] + i, loc[1] + (agent.range-i)
-#                    neg_locx = loc[0] - i
-#                    neg_locy = loc[1] - (agent.range-i)
-#                    for j in range(neg_locy, locy+1):
-#                        if locx < self.map_size[0]:
-#                            if  j < self.map_size[1] and j >= 0:
-#                                self.observation_space[j][locx] = self._env[j][locx]
-#                        if neg_locx >= 0:
-#                            if  j < self.map_size[1] and j >= 0:
-#                                self.observation_space[j][neg_locx] = self._env[j][neg_locx]
 
         elif team == RED:
             self.observation_space2 = np.full((self.map_size[0], self.map_size[1]), -1)
@@ -155,12 +144,6 @@ class CapEnv(gym.Env):
                             not (locx < 0 or locx > self.map_size[0]-1) and \
                             not (locy < 0 or locy > self.map_size[1]-1):
                             self.observation_space2[locy][locx] = self._env[locy][locx]
-#                for xi in range(-agent.range, agent.range+1):
-#                    for yi in range(-agent.range, agent.range+1):
-#                        locx, locy = loc[0] + xi, loc[1] + yi
-#                        if not (locx < 0 or locx > self.map_size[0]-1) and \
-#                                not (locy < 0 or locy > self.map_size[1]-1):
-#                            self.observation_space2[locy][locx] = self._env[locy][locx]
 
 
     def move_entity(self, action, unit, team):

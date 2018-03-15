@@ -3,7 +3,10 @@ import gym
 import gym_cap
 import numpy as np
 
-env = gym.make("cap-v0")
+## select the size of the map
+env = gym.make("cap-v0") #start with a small one 20x20
+#env = gym.make("cap-v1") #more challenging one 100x100
+
 #observation = env.reset(0) # debug if you don't want random generated map
 
 start_time = time.time()
