@@ -6,7 +6,7 @@
 3) install Cap-Env using python setup script (look at alias.txt file for example)
 4) try it by running cap_learn.py
 5) design the control algorithm that generates control actions (vector of 6 integers from 0 to 4). You may use only observations given by the environment.
-6) you may creates the algorithm in cap_learn or in a separate class/function and call it from cap_learn.
+6) you may create the algorithm in cap_learn or in a separate class/function and call it from cap_learn.
 7) your goal is :
   * find the enemy flag
   * pass through enemy patrol
